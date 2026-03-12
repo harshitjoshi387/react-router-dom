@@ -1,0 +1,6 @@
+React Router Dom
+install react router dom "npm i react-router-dom"
+in main.jsx "import {BrowserRouter}from 'react-router-dom'"
+wrap <App/> by BrowserRouter in main.jsx file
+make <Routes>(collesction of all route )and inside <Routes></Routes> make <Route/>
+In <Route/> mention path (where to go ) and elements (what to render)
