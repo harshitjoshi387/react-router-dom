@@ -1,10 +1,16 @@
 import React from 'react'
+import { Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home.jsx'
+import About from './Pages/About.jsx'
 
 const App = () => {
   return (
-    <div>
-      <h1 className='text-5xl text-emerald-500  underline font-semibold absolute top-1/2 left-1/2 translate-0.5'>Hello </h1>
-    </div>
+   <div>
+    <Routes>
+      <Route path='/' element={<Home/>} />
+      <Route path='/about' element={<About/>} />
+    </Routes>
+   </div>
   )
 }
 
