@@ -1,29 +1,30 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center px-10 py-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
+    <nav className="bg-black text-white flex items-center gap-10 px-10 h-16">
       
-      {/* Logo */}
-      <h1 className="text-3xl font-bold tracking-wide">
-        MyApp
-      </h1>
+      <NavLink 
+        to="/" 
+        className="hover:border-b-2 hover:border-white pb-1"
+      >
+        Home
+      </NavLink>
 
-      {/* Links */}
-      <div className="flex gap-10 text-xl">
-        <Link to="/" className="hover:text-yellow-300 transition duration-300">
-          Home
-        </Link>
+      <NavLink 
+        to="/About" 
+        className="hover:border-b-2 hover:border-white pb-1"
+      >
+        About
+      </NavLink>
 
-        <Link to="/about" className="hover:text-yellow-300 transition duration-300">
-          About
-        </Link>
-
-        <Link to="/product" className="hover:text-yellow-300 transition duration-300">
-          Product
-        </Link>
-      </div>
+      <NavLink 
+        to="/Product" 
+        className="hover:border-b-2 hover:border-white pb-1"
+      >
+        Product
+      </NavLink>
 
     </nav>
   )
